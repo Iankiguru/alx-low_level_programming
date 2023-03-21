@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
-*main - executes the code 
-* Returns: the sum of the relevant int
+*main - executes the code
+*Return: the sum of the relevant int
 */
-int main()
+int main(void)
 {
 	int sum = 0;
 
@@ -13,7 +13,7 @@ int main()
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 		{
-			sum +=i;
+			sum += i;
 		}
 	}
 	printf("%d\n", sum);
