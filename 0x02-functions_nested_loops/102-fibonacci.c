@@ -8,19 +8,22 @@
 */
 int main(void)
 {
-	int a = 1, b = 2, c, i;
+	int count;
 
-	printf("%d, %d, ", a, b);
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	for (i = 0; i < 48; i++)
+	for (count = 0; count < 50; count++)
 	{
-		c = a + b;
+		sum = fib1 + fib2;
+		printf("%lu", sum);
 
-		printf("%d, ", c);
+		fib1 = fib2;
+		fib2 = sum;
 
-		a = b;
-		b = c;
+		if (count == 49)
+			printf("\n");
+		else
+			printf(",");
 	}
-	printf("\n");
 	return (0);
 }
