@@ -8,7 +8,7 @@
 */
 int main(void)
 {
-	int n = 50;
+	int n = 50, i;
 
 	int sequence[n];
 
