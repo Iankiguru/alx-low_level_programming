@@ -15,7 +15,7 @@ int main(void)
 	{
 		c = a + b;
 
-		printf("d", c);
+		printf("%d", c);
 
 		if (count < 97)
 			printf(", ");
