@@ -8,22 +8,28 @@
 */
 int main(void)
 {
-	int count;
+	int n = 50;
 
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	int sequence[n];
 
-	for (count = 0; count < 50; count++)
+	sequence[0] = 1;
+	sequence[1] = 2;
+
+	for (i = 2; i < n; i++)
 	{
-		sum = fib1 + fib2;
-		printf("%lu", sum);
+		sequence[i] = sequence[i - 1]  + sequence[i - 2];
+	}
+	for (i = 0; i < n; i++)
+	{
+		printf("%d", sequence[i]);
 
-		fib1 = fib2;
-		fib2 = sum;
-
-		if (count == 49)
+		if (i != n - 1)
+		{
+			printf(", ");
+		} else
+		{
 			printf("\n");
-		else
-			printf(",");
+		}
 	}
 	return (0);
 }
