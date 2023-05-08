@@ -39,7 +39,7 @@ void check98(ssize_t check, char *file, int fd_from, int fd_to)
 }
 
 /**
- * check99 - this function checks that file_to was created or/and can be written to
+*check99-this function checks that file_to was created or/and can be written to
  * @check: this checks if true of false
  * @file: file_to name
  * @fd_from: file descriptor of file_from, or -1  (origin)
