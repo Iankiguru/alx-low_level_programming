@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
 * _strchr- finds a char in a string
 *@c : the occurence of the char
